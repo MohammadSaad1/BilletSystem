@@ -18,10 +18,17 @@ namespace BilletLibrary
 
         public override int Pris()
         {
-            if (BroBizz)
-                return bilPris * 95 / 100;
+            int total = bilPris;
 
-            return bilPris;
+            //ekstra 20 % pga lørdag eller søndag
+            if (base.Dato.DayOfWeek == DayOfWeek.Saturday || base.Dato.DayOfWeek == DayOfWeek.Sunday)
+                total = total * 80 / 100; 
+
+
+            if (BroBizz)
+                return total * 95 / 100;
+
+            return total;
         }
     }
 }

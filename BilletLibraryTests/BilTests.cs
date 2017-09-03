@@ -50,8 +50,6 @@ namespace BilletLibrary.Tests
             bil.NummerPlade = "AB12345";
             //Assert
             Assert.AreEqual("AB12345", bil.NummerPlade);
-
-
         }
 
         [TestMethod()]
@@ -61,6 +59,34 @@ namespace BilletLibrary.Tests
             bil.BroBizz = true;
             Assert.AreEqual(228, bil.Pris());
         }
+
+        [TestMethod()]
+        public void PrisLørdagTest()
+        {
+            var bil = new Bil();
+            bil.BroBizz = false;
+            bil.Dato = new DateTime(2017, 8, 26);
+            Assert.AreEqual(192, bil.Pris());
+        }
+
+        [TestMethod()]
+        public void PrisSøndagTest()
+        {
+            var bil = new Bil();
+            bil.BroBizz = false;
+            bil.Dato = new DateTime(2017, 8, 27);
+            Assert.AreEqual(192, bil.Pris());
+        }
+
+        [TestMethod()]
+        public void PrisMandagTest()
+        {
+            var bil = new Bil();
+            bil.BroBizz = false;
+            bil.Dato = new DateTime(2017, 8, 28);
+            Assert.AreEqual(240, bil.Pris());
+        }
+
 
     }
 }
