@@ -30,5 +30,11 @@ namespace BilletLibrary
 
         public abstract string KøreTøjType();
 
+        protected int GrundPris { get; }
+        public KøreTøj(int grundpris)
+        {
+            this.GrundPris = grundpris;
+        }
+
     }
 }

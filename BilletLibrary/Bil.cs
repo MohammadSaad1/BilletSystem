@@ -8,8 +8,9 @@ namespace BilletLibrary
 {
     public class Bil : KøreTøj
     {
+        private int v;
 
-        private const int bilPris = 240;
+        //protected const int GrundPris = 240;
 
         public override string KøreTøjType()
         {
@@ -18,7 +19,7 @@ namespace BilletLibrary
 
         public override int Pris()
         {
-            int total = bilPris;
+            int total = GrundPris;
 
             //ekstra 20 % pga lørdag eller søndag
             if (base.Dato.DayOfWeek == DayOfWeek.Saturday || base.Dato.DayOfWeek == DayOfWeek.Sunday)
@@ -30,5 +31,12 @@ namespace BilletLibrary
 
             return total;
         }
+
+        public Bil()
+         :base(240)
+        {
+
+        }
+
     }
 }
