@@ -57,6 +57,7 @@ namespace BilletLibrary.Tests
         {
             var bil = new Bil();
             bil.BroBizz = true;
+            bil.Dato = new DateTime(2017, 8, 28);
             Assert.AreEqual(228, bil.Pris());
         }
 
