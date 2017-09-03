@@ -8,11 +8,26 @@ namespace BilletLibrary
 {
     public abstract class KøreTøj
     {
-        public string Nummerplade { get; set; }
+        private string nummerPlade;
+
+        public string NummerPlade
+        {
+            get { return nummerPlade; }
+            set {
+                if (value.Length > 7)
+                    throw new ArgumentException("Nummerpladen må kun være syv tegn lang");
+                
+                nummerPlade = value;
+            }
+        }
+
+
         public DateTime Dato { get; set; }
 
         public abstract int Pris();
 
         public abstract string KøreTøjType(); 
+
+        
     }
 }
