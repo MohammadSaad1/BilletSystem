@@ -8,6 +8,8 @@ namespace BilletLibrary
 {
     public class MC : KøreTøj
     {
+
+        private const int McPris = 125;
         public override string KøreTøjType()
         {
             return "MC";
@@ -15,7 +17,10 @@ namespace BilletLibrary
 
         public override int Pris()
         {
-            return 125;
+            if (BroBizz)
+                return McPris * 95 / 100;
+
+            return McPris;
         }
     }
 }

@@ -54,5 +54,13 @@ namespace BilletLibrary.Tests
 
         }
 
+        [TestMethod()]
+        public void PrisBroBizzTest()
+        {
+            var bil = new Bil();
+            bil.BroBizz = true;
+            Assert.AreEqual(228, bil.Pris());
+        }
+
     }
 }

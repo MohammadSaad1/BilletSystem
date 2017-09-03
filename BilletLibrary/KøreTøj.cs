@@ -24,10 +24,11 @@ namespace BilletLibrary
 
         public DateTime Dato { get; set; }
 
+        public bool BroBizz { get; set; }
+
         public abstract int Pris();
 
-        public abstract string KøreTøjType(); 
+        public abstract string KøreTøjType();
 
-        
     }
 }

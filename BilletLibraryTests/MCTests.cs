@@ -20,11 +20,20 @@ namespace BilletLibrary.Tests
 
         }
 
+
         [TestMethod()]
         public void PrisTest()
         {
             var mc = new MC();
             Assert.AreEqual(125,mc.Pris());
+        }
+
+        [TestMethod()]
+        public void PrisBroBizzTest()
+        {
+            var mc = new MC();
+            mc.BroBizz = true;
+            Assert.AreEqual(118, mc.Pris());
         }
     }
 }
