@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BilletLibrary.Bil">
+    <Position X="1.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAACABAAAAAAAAA=</HashCode>
+      <FileName>Bil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BilletLibrary.BilØreSund">
+    <Position X="5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAA=</HashCode>
+      <FileName>BilØreSund.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BilletLibrary.KøreTøj">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAgAAAAAAAAAAAAAAAAAAAAABCBQAAAAAAIAA=</HashCode>
+      <FileName>KøreTøj.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BilletLibrary.MC">
+    <Position X="3.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>MC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BilletLibrary.MCØresund">
+    <Position X="6.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAA=</HashCode>
+      <FileName>MCØresund.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
