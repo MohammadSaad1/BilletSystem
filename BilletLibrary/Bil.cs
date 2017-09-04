@@ -17,6 +17,11 @@ namespace BilletLibrary
             return "Bil";
         }
 
+        /// <summary>
+        /// beregner prisen for bil på bagrund af om der er brobizz og om det er
+        /// en tur i weekenden
+        /// </summary>
+        /// <returns></returns>
         public override int Pris()
         {
             int total = GrundPris;
@@ -31,6 +36,8 @@ namespace BilletLibrary
 
             return total;
         }
+
+
 
         public Bil()
          :base(240)
