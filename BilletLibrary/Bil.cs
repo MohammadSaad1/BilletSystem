@@ -35,7 +35,9 @@ namespace BilletLibrary
         }
 
         //TODO Mangler en default constructor
-
+        /// <summary>
+        /// constructor
+        /// </summary>
         public Bil()
          :base(240)
         {
