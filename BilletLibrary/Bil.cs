@@ -17,6 +17,8 @@ namespace BilletLibrary
             return "Bil";
         }
 
+
+        //TODO Der skal laves en refaktorering så brobizz rabatten kodes i selvstændig metode
         public override int Pris()
         {
             int total = GrundPris;
@@ -31,6 +33,8 @@ namespace BilletLibrary
 
             return total;
         }
+
+        //TODO Mangler en default constructor
 
         public Bil()
          :base(240)
