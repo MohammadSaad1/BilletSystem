@@ -17,6 +17,8 @@ namespace BilletLibrary
             return "Bil";
         }
 
+        
+
         public override int Pris()
         {
             int total = GrundPris;
